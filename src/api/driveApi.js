@@ -15,7 +15,7 @@ function buildSearchQuery(searchQuery, folderId) {
 export async function getFiles(folderId, searchQuery = '', pageToken = '') {
   try {
     const query = buildSearchQuery(searchQuery, folderId);
-    let url = `https://www.googleapis.com/drive/v3/files?key=${API_KEY}&q=${encodeURIComponent(query)}&fields=nextPageToken,files(id,name,mimeType,thumbnailLink,webContentLink,iconLink)&pageSize=12&orderBy=modifiedTime desc`;
+    let url = `https://www.googleapis.com/drive/v3/files?key=${API_KEY}&q=${encodeURIComponent(query)}&fields=nextPageToken,files(id,name,mimeType,thumbnailLink,webContentLink,iconLink,modifiedTime)&pageSize=12&orderBy=modifiedTime desc`;
 
     if (pageToken) {
       url += `&pageToken=${pageToken}`;

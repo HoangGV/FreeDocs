@@ -7,8 +7,8 @@ export default defineConfig({
   base: "/",
   server: {
     host: true,
-    // allowedHosts: [
-    //   '3638cc29-d1a1-4ff4-b5de-254526e9a771-00-391pdm4cz87wk.pike.replit.dev'
-    // ],
+    allowedHosts: [
+      '3638cc29-d1a1-4ff4-b5de-254526e9a771-00-391pdm4cz87wk.pike.replit.dev'
+    ],
   },
 });
