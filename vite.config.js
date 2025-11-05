@@ -1,18 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/FreeDocs/',
+  base: "/",
   server: {
-    // Cho phép máy chủ Vite lắng nghe trên tất cả các địa chỉ,
-    // hữu ích cho các môi trường như Replit/Codespaces
-    host: true, 
-
-    // // Thêm host của bạn vào danh sách cho phép
+    host: true,
     // allowedHosts: [
     //   '3638cc29-d1a1-4ff4-b5de-254526e9a771-00-391pdm4cz87wk.pike.replit.dev'
     // ],
-  }
-})
+  },
+});
