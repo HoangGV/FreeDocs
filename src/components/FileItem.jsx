@@ -91,10 +91,10 @@ const FileItem = ({ file }) => {
             ) : (
               <>
                 <ActionButton
-                  {/* href={file.webContentLink} */}
-                  {/* onClick={handleDownloadClick} */}
-                  id="download-popup"
-                  onClick={() => setShowPopup(true)}
+                  href={file.webContentLink}
+                  onClick={handleDownloadClick}
+                  // id="download-popup"
+                  // onClick={() => setShowPopup(true)}
                   icon={isDownloading ? <FaSpinner className="animate-spin" /> : <FaDownload />}
                   label="Tải xuống"
                   bgClass={isDownloading ? "bg-gray-500 cursor-not-allowed" : "bg-green-600"}
@@ -102,16 +102,18 @@ const FileItem = ({ file }) => {
                 <ActionButton
                   icon={<FaEye />}
                   label="Xem"
-                  bgClass="bg-orange-500 opacity-60 cursor-not-allowed"
-                  onClick={(e) => e.preventDefault()}
-                  {/* href={`https://drive.google.com/file/d/${file.id}`} */}
+                  bgClass="bg-orange-500"
+                  // bgClass="bg-orange-500 opacity-60 cursor-not-allowed"
+                  // onClick={(e) => e.preventDefault()}
+                  href={`https://drive.google.com/file/d/${file.id}`}
                 />
                 <ActionButton
-                  {/* onClick={handleCopyLink} */}
-                  onClick={(e) => e.preventDefault()}
+                  onClick={handleCopyLink}
+                  // onClick={(e) => e.preventDefault()}
                   icon={<FaLink />}
                   label="Sao chép link"
-                  bgClass="bg-gray-600 opacity-60 cursor-not-allowed"
+                  bgClass="bg-gray-600"
+                  // bgClass="bg-gray-600 opacity-60 cursor-not-allowed"
                 />
               </>
             )}
