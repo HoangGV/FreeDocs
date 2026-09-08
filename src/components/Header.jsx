@@ -18,7 +18,7 @@ const Header = () => {
               FreeDocs DHS
             </Link>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              Tổng hợp bởi <a href='http://zaloapp.com/qr/p/vsik15wim5g5' target='_blank' >Hoàng GV</a>
+              Tổng hợp bởi <a href='https://www.facebook.com/HoangLamRV/' target='_blank' >Hoàng GV</a>
             </p>
           </div>
         </div>
